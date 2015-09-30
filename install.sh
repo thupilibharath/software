@@ -1,11 +1,11 @@
-sudo yum install gcc-c++ make
-sudo yum install openssl-devel
-sudo yum install git
-wget https://nodejs.org/dist/v4.1.1/node-v4.1.1-darwin-x64.tar.gz
-tar xzvf node-v4.1.1-darwin-x64.tar.gz
-cd node-v4.1.1-darwin-x64
+sudo yum -y install gcc-c++ make
+sudo yum -y install openssl-devel
+sudo yum -y install git
+wget -c -y https://nodejs.org/dist/v4.1.1/node-v4.1.1.tar.gz
+tar xzvf -y node-v4.1.1.tar.gz
+cd node-v4.1.1
 ./configure
 make && sudo make install
 
-sudo yum install mysql-sever
-sudo yum install mysql
+sudo yum -y install mysql-sever
+sudo yum -y install mysql
