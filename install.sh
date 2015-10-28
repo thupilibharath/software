@@ -1,14 +1,9 @@
-sudo yum -y install gcc-c++ make
-sudo yum -y install openssl-devel
-sudo yum -y install git
-wget -c https://nodejs.org/dist/v4.2.1/node-v4.2.1.tar.gz
-tar xzvf node-v4.2.1.tar.gz
-cd node-v4.2.1
-./configure
-make && sudo make install
-
-sudo yum -y install mysql-sever
-sudo yum -y install mysql
-sudo npm cache clean -f
-sudo npm install -g n
-sudo n stable
+#Mongo Install
+sudo apt-get update
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
+echo "deb http://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.0.list
+sudo apt-get update
+sudo apt-get install -y mongodb-org
+#Node Install
+wget -qO- https://deb.nodesource.com/setup_4.x | sudo bash -
+sudo apt-get install --yes nodejs
