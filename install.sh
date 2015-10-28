@@ -8,3 +8,4 @@ sudo apt-get install -y mongodb-org
 wget -qO- https://deb.nodesource.com/setup_4.x | sudo bash -
 sudo apt-get install --yes nodejs
 sudo apt-get update
+sudo apt-get update
